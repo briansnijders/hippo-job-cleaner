@@ -1,3 +1,11 @@
+# Eclipse 
+.project
+.settings/
+
+# Maven
+target
+
+# Java
 *.class
 
 # Package Files #
