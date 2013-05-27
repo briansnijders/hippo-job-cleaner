@@ -8,24 +8,21 @@ Please note that this runner DOES NOT BACKUP the jobs, but simply flushes them. 
 please use the repository console and execute appropriate queries.
 
 Local development
------------------
-# build & run
+build & run
 > mvn clean compile exec:java
 
-# rerun (faster)
+rerun (faster)
 > mvn -o -q compile exec:java
 
 Build distributable application
--------------------------------
-
-# build
+build
 > mvn clean package appassembler:assemble
 
 - copy runner.properties to target/hippo-job-cleaner-${version}/bin
 - change/check username and password in runner.properties
 - compress the assembled directory and distribute
 
-# run app
+run app
 cd bin
 chmod +x jcr-runner
 ./jcr-runner
